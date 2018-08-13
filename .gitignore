@@ -261,3 +261,5 @@ __pycache__/
 *.pyc
 /smart-reports/smart-reports/envSmart-Reports
 /smart-reports/smart-reports.sln
+/smart-reports.sln
+/smart-reports/envSmart-Reports
