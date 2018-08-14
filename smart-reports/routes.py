@@ -1,12 +1,14 @@
-from flask import Flask, url_for
+from flask import Flask, url_for, render_template
 from app import app
 
 
 #server/
 @app.route('/')
-def hello():
-    createLink= "<a href='" + url_for('aboutus') + "'>Create a question</a>";
-    return """Hello World!""" + createLink
+def hello(name=None):
+    return render_template('index.html',name=name)
+    
+    #createLink= "<a href='" + url_for('aboutus') + "'>Create a question</a>";
+    #return """Hello World!""" + createLink
     
 
 # cada uno de estos es una direccion aparte
@@ -21,4 +23,6 @@ def aboutus():
 @app.route('/question/<title>')
 def question(title):
     return '<h2>' + title + '</h2>'
-#test   
+
+
+#test
