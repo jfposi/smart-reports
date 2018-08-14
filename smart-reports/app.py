@@ -7,18 +7,25 @@ app = Flask(__name__)
 wsgi_app = app.wsgi_app
 #NO TOCAR-------------------------------------------
 
-# importar nuestras rutas de routes.py
+###############################################
+# importar nuestras rutas de routes.py y las opciones de devoptions.py
 from routes import *
 
-# aqui importamos todos los restos de codigo que hacen que esto funcione funciones etc
+#Comentar para producción!!
+from devoptions import *
+###############################################
 
+
+
+
+# aqui importamos todos los restos de codigo que hacen que esto funcione funciones etc
 
 # test  
 
 
 
 
-#launch server
+#launch server cooo
 if __name__ == '__main__':
     import os
     HOST = os.environ.get('SERVER_HOST', 'localhost')
