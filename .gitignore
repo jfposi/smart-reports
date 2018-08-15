@@ -267,3 +267,6 @@ __pycache__/
 # data zip to ignore by john
 zip_data/
 *.zip
+
+# data env
+venv/
