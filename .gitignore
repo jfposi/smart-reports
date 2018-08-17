@@ -264,9 +264,8 @@ __pycache__/
 /smart-reports.sln
 /smart-reports/envSmart-Reports
 
-# data zip to ignore by john
-zip_data/
-*.zip
-
-# data env
+# folder ignored by john
 venv/
+raw_data/
+*.zip
+*.csv
