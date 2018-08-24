@@ -28,10 +28,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="database.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="devoptions.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="routes.py">
+    <Compile Include="models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -1872,6 +1878,8 @@
     <Content Include="static\dist\css\alt\AdminLTE-select2.min.css" />
     <Content Include="static\dist\css\alt\AdminLTE-without-plugins.css" />
     <Content Include="static\dist\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="static\dist\css\bootstrap-year-calendar.css" />
+    <Content Include="static\dist\css\bootstrap-year-calendar.min.css" />
     <Content Include="static\dist\css\skins\skin-black-light.css" />
     <Content Include="static\dist\css\skins\skin-black-light.min.css" />
     <Content Include="static\dist\css\skins\skin-black.css" />
@@ -1926,6 +1934,9 @@
     <Content Include="static\dist\img\user8-128x128.jpg" />
     <Content Include="static\dist\js\adminlte.js" />
     <Content Include="static\dist\js\adminlte.min.js" />
+    <Content Include="static\dist\js\bootstrap-year-calendar.d.ts" />
+    <Content Include="static\dist\js\bootstrap-year-calendar.js" />
+    <Content Include="static\dist\js\bootstrap-year-calendar.min.js" />
     <Content Include="static\dist\js\demo.js" />
     <Content Include="static\dist\js\pages\dashboard.js" />
     <Content Include="static\dist\js\pages\dashboard2.js" />
