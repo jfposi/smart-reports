@@ -1,14 +1,13 @@
 from flask import Flask, url_for, render_template
 from app import app
-
+from devoptions import *
 
 #server/
 @app.route('/')
-def hello(name=None):
-    return render_template('index.html',name=name)
-    
-    #createLink= "<a href='" + url_for('aboutus') + "'>Create a question</a>";
-    #return """Hello World!""" + createLink
+def home(name=None):
+    return render_template('index.html', \
+                           name=name,\
+                           calendarcodegen=get_js_maincalendar())
     
 
 # cada uno de estos es una direccion aparte
@@ -25,4 +24,7 @@ def question(title):
     return '<h2>' + title + '</h2>'
 
 
-#test
+
+
+
+
